@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">史丹利解紹網站</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">關於</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">服務</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">聯絡</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺區塊 -->
+    <section class="bg-light text-center py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">歡迎來到我的史丹利解紹網站</h1>
+            <p class="lead text-muted">因為我每次說史丹利好帥他們都笑我</p>
+            <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-title="史丹利解紹網站" 
+                data-content="這是一個介紹各種名為史丹利的網站，歡迎點擊下方的卡片了解更多！">
+                了解更多
+            </button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">了解</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalContent">
+                    <p>更多。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 三欄內容區 -->
+    <section class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">史丹利·史奈德</h5>
+                        <p class="card-text">Dr.STONE 新石紀</p>
+                        <img src="新石記.webp" width="300" alt="史丹利·史奈德">
+                        <button type="button" class="btn btn-primary btn-lg mt-3" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#exampleModal"
+                            data-title="史丹利·史奈德"
+                            data-content="《Dr.STONE 新石紀》中的角色，是一位冷靜沉著的菁英軍人，擅長戰術與槍械操作。">
+                            了解更多
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">史丹利·梁（Stanley Leung）</h5>
+                        <p class="card-text">香港音樂製作人</p>
+                        <img src="中國音樂人.webp" width="200" alt="史丹利·梁">
+                        <button type="button" class="btn btn-primary btn-lg mt-3" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#exampleModal"
+                            data-title="史丹利·梁"
+                            data-content="香港音樂人，曾擔任寶麗金唱片音樂經理與創作人，為華語流行音樂界的重要推手。">
+                            了解更多
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Stanley 史丹利</h5>
+                        <p class="card-text">一位youbute</p>
+                        <img src="youtube.jpg" width="200" height="300" alt="Stanley YouTuber">
+                        <button type="button" class="btn btn-primary btn-lg mt-3" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#exampleModal"
+                            data-title="Stanley 史丹利（YouTuber）"
+                            data-content="知名遊戲類型 YouTuber，以幽默風格與遊戲實況吸引大量粉絲。">
+                            了解更多
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 我的網站. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS + Modal control script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+        const exampleModal = document.getElementById('exampleModal');
+        exampleModal.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget;
+            const title = button.getAttribute('data-title');
+            const content = button.getAttribute('data-content');
+            const modalTitle = exampleModal.querySelector('#modalTitle');
+            const modalContent = exampleModal.querySelector('#modalContent');
+            modalTitle.textContent = title;
+            modalContent.innerHTML = `<p>${content}</p>`;
+        });
+    </script>
+</body>
+</html>
